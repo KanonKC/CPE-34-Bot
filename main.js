@@ -34,9 +34,8 @@ Client.on("message",async (message)=>{
             if(message.channel.id != "851365772210077737"){break}
             var id = require("./id").id
             
-            if(id.includes(arg[1])){
+            if(id.includes(Number(arg[1]))){
                 message.member.roles.add(Role.member)
-                console.log("DONE!!!")
             }
             break
 
